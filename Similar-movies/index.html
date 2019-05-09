@@ -1,0 +1,55 @@
+
+<!-- Created by Vatsla Chauhan -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115756191-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-115756191-2');
+        </script>
+
+        <meta charset="UTF-8">
+        <title>Search for similar movies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quattrocento:400,700" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main>
+            <header class="mid search">
+                <h1>Search for <br> similar movies</h1>
+                <div class="back-button"><img id="back-button" class="iconic iconic-md" data-direction="left"/></div>
+                <input type="text" id="search-input" placeholder="Search for movies by keywords ..." />
+                <div class="search-button"><img id="search-button" class="iconic iconic-md"/></div>
+
+            </header>
+
+            <div class="page" id="search-results">
+                <section class="title"></section>
+                <section class="content search-results-content flex-container"></section>
+                <div>
+                    <div class="pagination">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="recommend-results">
+                <section class="title"></section>
+                <section class="content recommend-results-content flex-container"></section>
+            </div>
+
+        </main>
+
+        <script src="./js/iconic.min.js"></script>
+        <script src="./js/key.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
